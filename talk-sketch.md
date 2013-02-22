@@ -4,14 +4,15 @@
 
 # How to succeed in reproducible research <br /> without really trying
 
-<!--Pandoc metadata after percentages: 
+<!--Pandoc metadata after percentages, before first non-title slide: 
 <!--Title-->
 <!--Author(s) separated by semicolons or white space-->
 <!--Date (replaced here by affiliation for now)-->
-<!--"How to succeed in business without really trying" promotional poster goes here-->
-<!-- Notes: 500px by 500px is too big; so is 799px by 354px, but 150px by 200px works -->
+<!--"How to succeed in business without really trying" promotional poster goes in this slide-->
+<!-- Notes: 500px by 500px is too big for Beamer; so is 799px by 354px, but 150px by 200px works -->
+<!-- However, 150px by 200px is small for S5 and HTML-based slides -->
 
-![Promotional poster for "How to succeed in business without really trying](how-to-succeed-150x200.jpg)\ 
+![Promotional poster for "How to succeed in business without really trying"](how-to-succeed-150x200.jpg)\ 
 
 <!--Establish need -->
 
@@ -30,8 +31,9 @@
 
 # We can fix these problems... <br /> We have the technology
 
-("Six Million Dollar Man" picture placeholder)
 <!--Six million dollar man picture and reference-->
+
+![Opening credits image of "The Six Million Dollar Man"](six-million-dollar-man-220x172.jpg)\ 
 
 <!--Main message-->
 
@@ -243,8 +245,8 @@
     + Producer costs:
         - citations and collaborations; research becomes less trustworthy, comprehensible
         - bookkeeping: time spent matching version of code to figures in paper (if you can!)
-        - new collaborators (grad students, postdocs) have to redo work of others
- 
+        - new group members redo existing work
+        
 # Policies requiring reproducibility <br /> have not been effective
 - Some journals and funding agencies require some form of reproducibility
     + PLoS, _Science_, and others require sharing of code and data
@@ -267,14 +269,24 @@
     + Electronic notebooks, such as Carl Boettiger's, tackle day-to-day record-keeping
 
 <!--Review-->
-
-# Ultimately, reproducible research is about <br /> verification, transparency, and efficiency
-
-(Write a recap here)
-
 <!--Summarize definition of reproducibility-->
 <!--Tie definition to verification, transparency, and efficiency-->
 <!--Tie these qualities to tools-->
+
+# Ultimately, reproducible research is about <br /> verification, transparency, and efficiency
+- Reproducible research is about sharing data & code with papers
+- **Verification**
+    + Publicly posted code & data makes checking work easier
+    + Use tools like version control, unit testing, file hosting
+- **Transparency**
+    + Concerns and questions addressed by looking at code & data
+    + GitHub and BitBucket list record of all changes to code, data, paper
+    + FigShare used to share data publicly, track its citations
+- **Efficiency**
+    + Others do not necessarily have to redo existing work
+    + Get more citations per paper
+    + Easier to remember what you did after a long break
+    + Easier to build upon, collaborate, transfer knowledge
 
 <!--Conclusion-->
 
@@ -283,7 +295,7 @@
 <!--"How to succeed in business without really trying" promotional poster goes here-->
 <!-- Notes: 500px by 500px is too big; so is 799px by 354px, but 150px by 200px works -->
 
-![Promotional poster for "How to succeed in business without really trying](how-to-succeed-150x200.jpg)\ 
+![Promotional poster for "How to succeed in business without really trying"](how-to-succeed-150x200.jpg)\ 
 
 <!--Acknowledgments-->
 
