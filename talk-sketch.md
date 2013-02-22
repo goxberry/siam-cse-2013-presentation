@@ -8,8 +8,10 @@ Lawrence Livermore National Laboratory
 
 ## How to succeed in reproducible research <br /> without really trying
 
-("How to succeed in business without really trying" picture placeholder)
-<!--"How to succeed in business without really trying" picture and reference-->
+<!--"How to succeed in business without really trying" promotional poster goes here-->
+<!-- Notes: 500px by 500px is too big; so is 799px by 354px, but 150px by 200px works -->
+
+![Promotional poster for "How to succeed in business without really trying](how-to-succeed-150x200.jpg)\ 
 
 <!--Establish need -->
 
@@ -278,9 +280,10 @@ Lawrence Livermore National Laboratory
 
 ## Available tools let you do <br /> reproducible research without really trying
 
-("How to succeed in business without really trying" picture placeholder)
+<!--"How to succeed in business without really trying" promotional poster goes here-->
+<!-- Notes: 500px by 500px is too big; so is 799px by 354px, but 150px by 200px works -->
 
-<!--"How to succeed in business without really trying" picture and reference again-->
+![Promotional poster for "How to succeed in business without really trying](how-to-succeed-150x200.jpg)\ 
 
 <!--Acknowledgments-->
 
