@@ -5,6 +5,7 @@ This repository contains files needed to generate a presentation for the SIAM CS
 ## Dependencies
 
 - Pandoc
+- Beamer (for Beamer-formatted talk)
 
 ## Instructions
 
@@ -30,7 +31,19 @@ To customize the S5 talk, it is probably better to modify the base command
     
 and add stylesheets, and so forth.
 
-To generate a beamer presentation in PDF format from the talk notes, use the command:
+To generate a minimalist beamer presentation in PDF format from the talk notes, use the command:
 
     pandoc -t beamer talk-sketch.md -o talk-sketch.pdf
+    
+Some formatting has been added in the LaTeX template `beamer-talk-template.tex`. It requires the following LaTeX packages:
+
+- relsize
+- textpos
+- eso-pic
+- hyperref
+
+To use this template, run:
+
+    pandoc --template=beamer-talk-template.tex -t beamer talk-sketch.md -o beamer-talk.pdf
+
 
