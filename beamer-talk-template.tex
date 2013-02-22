@@ -1,0 +1,99 @@
+\documentclass [14pt]{beamer}
+
+\usepackage{relsize}
+\usepackage[absolute,overlay]{textpos} 
+\usepackage[colorgrid,texcoord]{eso-pic} 
+\usepackage{hyperref}
+
+%% Begin global presentation formatting
+% Taken from
+% http://tex.stackexchange.com/questions/13423/how-to-color-href-links-in-beamer
+\definecolor{links}{HTML}{660099}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+% Define theme and colortheme for presentation
+\mode<presentation>
+{
+	\usetheme{Boadilla}
+        \usecolortheme{default}
+}
+
+% Toggle commenting of next line for debugging image placement
+%\setbeamertemplate{background}[grid][step=5mm]
+\setlength{\TPHorizModule}{5mm}
+\setlength{\TPVertModule}{5mm}
+%% End global presentation formatting
+
+%% Begin overriding Pandoc metadata for title slide, headers, footers
+% Title, author, affiliation information 
+\title[Reproducibility without trying]
+{How to succeed in reproducible research without really trying}
+
+\subtitle[G. Oxberry]
+{\textbf{Geoffrey M. Oxberry}}
+
+\author[]{\small{Lawrence Livermore National Laboratory \\
+Computational Engineering Division \\
+Energy Conversion and Storage}}
+
+% For LLNL presentation number
+\institute[LLNL-PRES-XXXXX-DRAFT]
+%% End overriding Pandoc metadata for title slide, headers, footers
+
+%% Begin body and Pandoc macro section
+% Pandoc macros are enclosed in dollar signs
+
+% Snippet uses macros to auto-generate LaTeX for Beamer slides
+% from Pandoc input
+% Source: http://johnmacfarlane.net/pandoc/demo/mytemplate.tex
+% Geoff Oxberry added comments denoting ends of control statements
+% Geoff Oxberry also added comments to disable certain features
+
+%$if(title)$
+%\title{$title$}
+%$endif$ %(title)
+
+%\author{$for(author)$$author$$sep$ \and $endfor$}
+%\date{$date$}
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$ %(title)
+
+$for(include-before)$
+$include-before$
+$endfor$ %(include-before)
+
+$if(toc)$
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$ %(toc)
+$body$
+
+$if(natbib)$
+$if(biblio-files)$
+$if(biblio-title)$
+$if(book-class)$
+\renewcommand\bibname{$biblio-title$}
+$else$
+\renewcommand\refname{$biblio-title$}
+$endif$ %(book-class)
+$endif$ %(biblio-title
+\bibliography{$biblio-files$}
+$endif$ %(biblio-files)
+$endif$ %(natbib)
+
+$if(biblatex)$
+\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+$endif$ %(biblatex)
+
+$for(include-after)$
+$include-after$
+$endfor$ %(include-after)
+
+\end{document}
+%% End body and Pandoc macro section
