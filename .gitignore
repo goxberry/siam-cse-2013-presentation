@@ -79,3 +79,10 @@ tramp
 *.tdo
 ## End LaTeX
 ### End language gitignores
+
+### Begin actual project files
+## Keep markddown notes of slide show; ignore HTML & PDF output from Pandoc
+!talk-sketch.md
+talk-sketch.*
+
+## End actual project files
