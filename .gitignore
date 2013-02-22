@@ -1,0 +1,81 @@
+### .gitignore file: rules that tell Git what files not to track
+
+### Begin operating system gitignores
+## OS X ignores, from
+## https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+## End OS X ignores
+
+## Linux ignores, from
+## https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+.*
+!.gitignore
+*~
+## End Linux ignores
+### End operating system gitignores
+
+### Begin text editor gitignores
+## Emacs ignores, from
+## https://github.com/github/gitignore/blob/master/Global/Emacs.gitignore
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+## End Emacs ignores
+### End text editor gitignores
+
+### Begin language gitignores
+## LaTeX ignores, from
+## https://github.com/github/gitignore/blob/master/LaTeX.gitignore
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
+## End LaTeX
+### End language gitignores
