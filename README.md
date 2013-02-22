@@ -18,19 +18,19 @@ I use Pandoc to convert Markdown to HTML, but for this README, any Markdown to H
 
 ### Generating slide shows:
 
-All slides are at "level 2", which is to say that headings beginning with "##" in Markdown (or within h2 tags in HTML) are slide titles. The only level 1 heading is used for the presentation title.
+Sizing of images varies based on format. For instance, 150 pixel by 200 pixel images fill space nicely in Beamer slides, but look tiny in S5 slides (as would be expected).
 
 To generate an barebones S5 presentation from the talk notes, use the command:
 
-    pandoc -t s5 talk-sketch.md --slide-level 2 --self-contained -o talk-sketch.html
+    pandoc -t s5 talk-sketch.md --self-contained -o talk-sketch.html
     
 To customize the S5 talk, it is probably better to modify the base command
 
-    pandoc -t s5 talk-sketch.md --slide-level 2 -o talk-sketch.html
+    pandoc -t s5 talk-sketch.md -o talk-sketch.html
     
 and add stylesheets, and so forth.
 
 To generate a beamer presentation in PDF format from the talk notes, use the command:
 
-    pandoc -t beamer talk-sketch.md --slide-level 2 -o talk-sketch.pdf
+    pandoc -t beamer talk-sketch.md -o talk-sketch.pdf
 
