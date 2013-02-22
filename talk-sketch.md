@@ -90,7 +90,7 @@ Lawrence Livermore National Laboratory
     + executable tests and examples
     + code that runs on multiple platforms
 
-## Much of computational science is **not** reproducible
+## Most computational science is **not** reproducible currently
 - People do not post the code with their work
     + My first paper in graduate school did not include code
     + Code does not accompany many articles in SIAM journals
@@ -285,6 +285,6 @@ Lawrence Livermore National Laboratory
 
 ## Acknowledgments
 - Victoria Stodden (posted a literature review)
-- Jaydeep Bardhan, Ahmed Ismail, and friends (helpful discussions)
+- Jaydeep Bardhan, Ahmed E. Ismail, and friends (helpful discussions)
 - Matt McNenly, Dan Flowers, Russell Whitesides, and LLNL colleagues (helpful discussions)
 - Lawrence Livermore National Laboratory (funding via postdoc account)
