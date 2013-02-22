@@ -203,7 +203,7 @@
     + Helps with tracking citation metrics for posted material (mainly FigShare)
 - **Costs**:
     + Most services: registration requires 1 hour
-    + License restrictions may be placed on posted material (like CC-BY, or CC-0)
+    + License restrictions may be placed on posted material
     + Limited or no private storage space
 
 <!--Transition from Point 2 to Point 3-->
@@ -220,7 +220,7 @@
         - services like FigShare and ORCID enable and track citation of research outputs
     + **Efficiency**:
         - Version control makes it easier to collaborate, experiment, undo changes
-        - Testing frameworks reduces development time and time spend debugging
+        - Testing frameworks reduces development time and time spent debugging
         - Readers of papers need not re-implement reproducible research from scratch
 
 # Despite reducing costs, challenges remain
@@ -239,7 +239,7 @@
     + Consumers have to re-implement, then verify accuracy and credibility
     + Computational science community reputation also suffers
     + Contradicts the tradition that burden of proof is on producers
-- Unreproducible research ends up being a **false economy**
+- Unreproducible research is a **false economy**
     + Producer savings: time spent making research reproducible
     + Consumer costs: time spent making _others_ research reproducible
     + Producer costs:
