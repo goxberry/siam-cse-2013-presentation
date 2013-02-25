@@ -68,7 +68,7 @@
   
 <!--Point 1: State of reproducible research to-date-->
 
-# Idea of "reproducibility" has long history
+# Reproducibility has long history
 - Mathematical proof is one form of reproducibility
     + First: Greek mathematicians (_ca._ 400 BC)
     + Modern rigorous proof: 1800s
@@ -81,7 +81,7 @@
     + Genomics and genetics (2000s)
     + Statistics (2010s)
 
-# Reproducible research means <br /> "post paper and all supporting materials"
+# Reproducible research =<br /> "post paper and all supporting materials"
 - Reproducible research has many definitions
 - In this presentation, "reproducible research" means submitting _at minimum_:
     + the paper
@@ -90,7 +90,7 @@
 - Minimum standard chosen to minimize cost
 - Can be helpful to do more
 
-# Most computational science <br /> is **not** reproducible currently
+# Most computational science <br /> **not** reproducible currently
 - People do not post the code with their work
 - Even reproducible research gurus have published papers without code
 - They recount those experiences as cautionary tales
@@ -151,7 +151,7 @@
     + SVN, CVS require their own server (Git & Mercurial don't)
     + Can take a long time to learn intricacies (much like LaTeX, MATLAB)
   
-# Web sites exist to host <br /> version control repositories
+# Repository hosting sites available
 - **Examples**: GitHub, BitBucket, Google Code, SourceForge, etc.
 - **Payoffs**:
     + Eases collaboration
@@ -188,7 +188,7 @@
     + Can take a long time to master
     + Tough to debug
 
-# Services exist to host and track <br /> non-software research outputs
+# Services host and track pre-prints, data, etc.
 - **Examples**:
     + _Pre-prints_: arXiv, Optimization Online, FigShare, etc.
     + _Data, Figures, Presentations_: FigShare, DataDryad, ORCID, etc.
@@ -210,12 +210,11 @@
     + **Efficiency**: de-duplication of effort
 - These benefits map to tools as follows:
     + **Verification**: download hosted source code, build it, run tests
-    + **Transparency**:
-        - transparent research record downloaded from hosting sites
-        - FigShare and ORCID track citation of research outputs
+    + **Transparency**: hosting sites store research record, tracked
+    with FigShare & ORCID
     + **Efficiency**:
         - Version control enables collaborating, experimenting, reverting changes
-        - Testing frameworks reduces time spent debugging
+        - Testing frameworks reduce time spent debugging
         - Can reuse reproducible research
 
 # Despite reducing costs, challenges remain
@@ -236,7 +235,7 @@
     + Contradicts the tradition that burden of proof is on producers
 - Unreproducible research is a **false economy**
     + Producer savings: time spent making research reproducible
-    + Consumer costs: time spent making _others_ research reproducible
+    + Consumer costs: time spent making _others'_ research reproducible
     + Producer costs: citations, reputation, wasted time redoing work
         
 # Policies requiring reproducibility <br /> have not been effective
