@@ -138,7 +138,7 @@
     + Unit testing frameworks
     + Build systems
     + Figure, data, preprint archives
-- Examples, payoffs, and costs (conservative estimates) given
+- Examples, payoffs, and estimated costs (to learn basics) given
 
 # Version control systems <br /> track all code changes in repositories
 - **Examples**: Git, Mercurial, SVN, CVS, etc.
@@ -149,7 +149,7 @@
 - **Costs**
     + Need 2-3 days of use on your code, papers, presentations to get basics
     + SVN, CVS require their own server (Git & Mercurial don't)
-    + Can take a long time to learn intricacies (much like LaTeX, MATLAB)
+    + Takes a long time to master (much like LaTeX, MATLAB)
   
 # Repository hosting sites available
 - **Examples**: GitHub, BitBucket, Google Code, SourceForge, etc.
@@ -185,7 +185,7 @@
     + Avoid mistake-prone long chains of commands
 - **Costs**:
     + 1-3 days to work through basic examples
-    + Can take a long time to master
+    + Takes a long time to master
     + Tough to debug
 
 # Services host and track pre-prints, data, etc.
