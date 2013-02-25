@@ -3,15 +3,16 @@
 % Lawrence Livermore National Laboratory
 
 # Computational science has culture problems
-- **Lack of verification**
-    + "Is it a bug in my method, or its dependencies?"
-    + "Is the bug in my method, or its implementation?"
+- **Lack of verification**: Where's the bug?
+    + My method
+    + Its implementation
+    + Its dependencies
 - **Lack of transparency**
-    + Can publish unreproducible research; tough for others to debug
-    + Selective use of case studies can distort results
+    + Unreproducible research = tough for others to debug
+    + Distort results showing only "good" figures
 - **Efficiency**
-    + Developing new research harder if dependencies implemented from scratch
-    + Revising our own papers harder without reproducibility and good record-keeping
+    + Costly to implement everything from scratch
+    + Bad record-keeping makes collaboration, revision harder
 <!--Above slide establishes need -->
 
 <!--Original first slide-->
@@ -46,14 +47,11 @@
     + **Verification**: easier to find and fix bugs
     + **Transparency**: leads increased citation count, broader impact
     + **Efficiency**: via de-duplication of effort
-- In this talk, I am ignoring restrictions on sharing research due to
+- In this talk, I ignore restrictions due to:
     + Classified or sensitive material
     + Nondisclosure agreements
     + Software licensing issues
-- Partial reproducibility may still be possible in these situations
-    + Requires working with stakeholders
-    + Content of this talk still applies
-  
+- Partial reproducibility may still be possible despite restrictions  
 <!--Preview-->
 
 # How to succeed in reproducible research <br /> without really trying
@@ -72,10 +70,10 @@
 
 # Idea of "reproducibility" has long history
 - Mathematical proof is one form of reproducibility
-    + Originated with Greek mathematicians (_ca._ 400 BC)
-    + More modern rigorous proof dates to around 1800s
+    + First: Greek mathematicians (_ca._ 400 BC)
+    + Modern rigorous proof: 1800s
 - Notable experimental examples
-    + Galileo (1620s) built several copies of his telescope so that others could verify his results
+    + Galileo (1620s) built several copies of his telescope
     + Pasteur added "Materials and Methods" sections to his journal articles
 - Modern scientific movements
     + Structural and protein biology (1980s)
@@ -87,67 +85,59 @@
 - Reproducible research has many definitions
 - In this presentation, "reproducible research" means submitting _at minimum_:
     + the paper
-    + all code to reproduce results, figures, and tables
-    + all of the data to reproduce results, figures, and tables
-    + README files on how to execute code, what data represents
-- Minimum standard chosen to make reproducibility cost as little as possible
-- Beyond the minimum listed, it can be helpful to have:
-    + clean, well-documented code
-    + tests of the code, example test cases
-    + executable code
-    + executable tests and examples
-    + code that runs on multiple platforms
+    + all code and data to reproduce results
+    + README files describing code, data
+- Minimum standard chosen to minimize cost
+- Can be helpful to do more
 
 # Most computational science <br /> is **not** reproducible currently
 - People do not post the code with their work
-    + My first paper in graduate school did not include code
-    + Code does not accompany many articles in SIAM journals
-- Even reproducible research advocates cite cases where they published research without code
-- These experiences are then recounted as cautionary tales
+- Even reproducible research gurus have published papers without code
+- They recount those experiences as cautionary tales
 
 # Lack of reproducibility causes problems
 - Anecdotes of Professor David Donoho are typical:
-    + Which version of the research codes generated results for a paper?
-    + Are research obstacles encountered due to a bad method or a bad implementation of the method?
-    + It's easy to forget what you've done after not working on it for a year
-    + Results can depend on "magic parameter settings" that are not recorded, and thus forgotten
-    + New person in lab cannot replicate what former grad student has done
+    + Which version of code goes with paper?
+    + Where's the bug: method or implementation?
+    + Easy to forget research set aside for months
+    + Results can depend on "magic parameter settings"
+    + New person in lab can't repeat what former grad student's work
 - Reproducible research helps avoid these issues
 
 # Doing reproducible research has benefits
 - Reproducible research tends to be cited more
 - In addition, reproducible research has the following anecdotal benefits:
-    + Enhanced knowledge transfer due to more complete and immediately useful research record
-    + Easier to pick up where you leave off in a project, and remember what you did
-    + Easier to train new graduate students and postdocs in a lab (or in classes)
-    + Decreases time to revise papers and PhD theses
-    + Can attract collaborators
-    + Decreases time needed to find problems in code and algorithms
+    + Enhanced knowledge transfer 
+    + Easier to resume projects after hiatus
+    + Easier to train new researchers
+    + Decreases time to revision
+    + Attracts collaborators
+    + Decreases debugging time
 
 <!--Transition from Point 1 to Point 2-->
 
 # Reaping benefits of reproducible research <br /> reduces to habits and practices
-- Basic principles of reproducibility in computational science are like those in experimental sciences
+- Basic principles of reproducibility in computational science like those in experimental sciences
 - Keep good records
     + Experimentalists and theoreticians use lab notebooks
     + Computational scientists should use notebooks and version control
 - Include these records as supplemental material to papers
-    + Experimentalists include data and statistical analyses as supplemental material
-    + Theoreticians include mathematical proofs and derivations
-    + Computational scientists should include code, data, and any proofs or derivations
+    + Experimentalists: include data and analyses
+    + Theoreticians: include proofs and derivations
+    + Computational scientists: include code, data, proofs, derivations
 - Use tests to guard against error
     + Experimentalists use positive and negative controls
-    + Computational scientists should test their codes as much as reasonably possible
+    + Computational scientists: test codes as much as possible
     
 <!--Point 2: Tools and services to do reproducible research at reasonable cost-->
 
 # Tools enable adopting these practices <br /> at reasonable cost
 - Automating habits with tools and services reduces their cognitive burden
-    + Version control systems track code changes in repositories
-    + Web sites exist that host these repositories
-    + Unit testing frameworks ease debugging, verification
-    + Build systems automate running tests, generating results
-    + Services exist to host and track non-software research outputs
+    + Version control systems
+    + Repository hosting web sites
+    + Unit testing frameworks
+    + Build systems
+    + Figure, data, preprint archives
 - Examples, payoffs, and costs (conservative estimates) given
 
 # Version control systems <br /> track all code changes in repositories
@@ -165,32 +155,33 @@
 - **Examples**: GitHub, BitBucket, Google Code, SourceForge, etc.
 - **Payoffs**:
     + Eases collaboration
-    + Free backup of project files in cloud
+    + Free backup of project files
+    + Publicity
 - **Costs**:
-    + 1 hour to register, sync up files
+    + 1 hr to register, sync up files
     + Limiting access costs money, unless:
-        - you have an academic e-mail address (even alumni): use BitBucket
-        - you are an academic and contact GitHub
+        - BitBucket + academic e-mail address
+        - GitHub + academic e-mail address + special permission
     + Space is limited (usually 1 GB or so)
-    + Not really for large data sets or binaries (except SourceForge)
-    + Limited by terms of service (example: SourceForge requires open source)
+    + Large data sets or binaries: SourceForge or data archive
+    + Limited by terms of service
   
 # Unit testing frameworks <br /> ease debugging, verification
 - **Examples**: MATLAB xUnit, Python Nose, GoogleTest, etc.
 - **Payoffs**:
-    + Automates the testing of code; use for verification!
-    + Reduces amount of boilerplate code needed for testing
-    + Shown to reduce software development time costs; get papers faster
+    + Automates verification
+    + Easier to write tests
+    + Reduce software development time costs; get papers faster
 - **Costs**:
     + 1-2 days to work through examples
-    + Each language has its own framework...
-    + ...but most frameworks look very similar (follow xUnit standard)
+    + Each language has its own framework
+    + Most frameworks use xUnit standard
 
 # Build systems automate <br /> running tests, generating results
 - **Examples**: GNU make, SCons, CMake, GNU autotools, etc.
 - **Payoffs**:
-    + Build source code, test, and run, all in one command
-    + Can also build presentations from LaTeX (or other) source
+    + Build source code, test, run, all in one command
+    + Build presentations, papers from LaTeX (or other) source
     + Avoid mistake-prone long chains of commands
 - **Costs**:
     + 1-3 days to work through basic examples
@@ -203,29 +194,29 @@
     + _Data, Figures, Presentations_: FigShare, DataDryad, ORCID, etc.
 - **Payoffs**:
     + Free space for hosting
-    + Assignment of Uniform Research Identifiers, useful for citing research outputs
-    + Helps with tracking citation metrics for posted material (mainly FigShare)
+    + Assignment of DOIs
+    + Tracking citation metrics (mainly FigShare)
 - **Costs**:
-    + Most services: registration requires 1 hour
-    + License restrictions may be placed on posted material
+    + Registration: 1 hour
+    + License restrictions placed on posted material
     + Limited or no private storage space
 
 <!--Transition from Point 2 to Point 3-->
 
 # Tools reduce costs of reproducible research
 - Recall that reproducibility of work yields:
-    + **Verification**: easier to find and fix bugs
-    + **Transparency**: leads to increased citation count, broader impact
-    + **Efficiency**: via de-duplication of effort
+    + **Verification**: easier debug
+    + **Transparency**: increased citation count, broader impact
+    + **Efficiency**: de-duplication of effort
 - These benefits map to tools as follows:
     + **Verification**: download hosted source code, build it, run tests
     + **Transparency**:
         - transparent research record downloaded from hosting sites
-        - services like FigShare and ORCID enable and track citation of research outputs
+        - FigShare and ORCID track citation of research outputs
     + **Efficiency**:
-        - Version control makes it easier to collaborate, experiment, undo changes
-        - Testing frameworks reduces development time and time spent debugging
-        - Readers of papers need not re-implement reproducible research from scratch
+        - Version control enables collaborating, experimenting, reverting changes
+        - Testing frameworks reduces time spent debugging
+        - Can reuse reproducible research
 
 # Despite reducing costs, challenges remain
 - Tools make it easier to do reproducible research, but...
@@ -237,40 +228,37 @@
 
 # Reproducible research practices: <br /> a solution _resisted_
 - Most computational science research is not done reproducibly
-    + Viewed as costing too much (time, money, resources)
-    + Benefits viewed as too little for costs
+    + Viewed as costing too much
+    + Cost-benefit tradeoff considered unfavorable
 - These views **shift costs from research _producers_ to research _consumers_**
-    + Consumers have to re-implement, then verify accuracy and credibility
+    + Consumers re-implement, then check
     + Computational science community reputation also suffers
     + Contradicts the tradition that burden of proof is on producers
 - Unreproducible research is a **false economy**
     + Producer savings: time spent making research reproducible
     + Consumer costs: time spent making _others_ research reproducible
-    + Producer costs:
-        - citations and collaborations; research becomes less trustworthy, comprehensible
-        - bookkeeping: time spent matching version of code to figures in paper (if you can!)
-        - new group members redo existing work
+    + Producer costs: citations, reputation, wasted time redoing work
         
 # Policies requiring reproducibility <br /> have not been effective
 - Some journals and funding agencies require some form of reproducibility
-    + PLoS, _Science_, and others require sharing of code and data
+    + PLoS, _Science_, others require sharing of code and data
     + NIH, NSF, DOE require sharing of data
 - Despite these policies, researchers still don't share data or code <!--Provide examples here-->
 - Even if code and data are provided, research still may not be reproducible <!--Provide examples here-->
-- These policies are not enforced with penalties, which may be why they are ineffective
-- Opportunities exist to craft better policies, align community and personal incentives
+- Policies are not enforced with penalties, probably why they are ineffective
+- Better policies must align community and personal incentives
  
 # Technical challenges also still exist
 - Reproducing big data and supercomputing research is hard
-    + Obstacles are scarcity of resources (large storage, large supercomputers)
-    + Best practices: cache intermediate data and results; use independent teams on same resources
+    + Scarcity of resources (big storage, big supercomputers)
+    + Best practice: cache intermediate data and results
 - Making sure that source code works on other people's computers is hard
-    + Installing software is time-consuming and fragile
+    + Installing software is tedious and hard
     + To run someone's source code, need their whole development environment
     + Best practices: use virtual machines, provisioning software, reproducibility software
 - Keeping detailed enough records -- provenance -- is hard
-    + Many software packages tackle this problem: VisTrails, Madagascar, Sumatra, etc.
-    + Electronic notebooks, such as Carl Boettiger's, tackle day-to-day record-keeping
+    + Provenance software: VisTrails, Madagascar, Sumatra, etc.
+    + Electronic notebooks like Carl Boettiger's tackle day-to-day record-keeping
 
 <!--Review-->
 <!--Summarize definition of reproducibility-->
@@ -311,3 +299,4 @@
 - Jaydeep Bardhan, Ahmed E. Ismail, and friends (helpful discussions)
 - Matt McNenly, Dan Flowers, Russell Whitesides, and LLNL colleagues (helpful discussions)
 - Lawrence Livermore National Laboratory (funding via postdoc account)
+- Gurpreet Singh (program manager)
