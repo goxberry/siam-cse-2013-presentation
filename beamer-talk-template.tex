@@ -1,4 +1,4 @@
-\documentclass [11pt]{beamer}
+\documentclass [12pt]{beamer}
 
 \usepackage{relsize}
 \usepackage[absolute,overlay]{textpos} 
@@ -34,7 +34,12 @@
 
 \author[]{\small{Lawrence Livermore National Laboratory \\
 Computational Engineering Division \\
-Energy Conversion and Storage}}
+Energy Conversion and Storage} \\[2\baselineskip] 
+\scriptsize{This work was performed under the auspices of the 
+US Department of Energy by Lawrence Livermore National Laboratory
+ under Contract DE-AC52-07NA27344. Views expressed in this work
+are solely those of its author and do not reflect the views of Lawrence
+Livermore National Laboratory.}}
 
 % For LLNL presentation number
 \institute[LLNL-PRES-XXXXX-DRAFT]
@@ -82,7 +87,7 @@ $if(book-class)$
 $else$
 \renewcommand\refname{$biblio-title$}
 $endif$ %(book-class)
-$endif$ %(biblio-title
+$endif$ %(biblio-title)
 \bibliography{$biblio-files$}
 $endif$ %(biblio-files)
 $endif$ %(natbib)
