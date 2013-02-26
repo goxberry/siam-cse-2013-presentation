@@ -15,17 +15,13 @@
     + Bad record-keeping makes collaboration, revision harder
 <!--Above slide establishes need -->
 
-<!--Original first slide-->
-<!--# How to succeed in reproducible research <br /> without really trying-->
-<!--This slide is an attention getter (or at least, it was, until I commented it out)-->
-<!--Pandoc metadata after percentages, before first non-title slide: 
+<!--Before first non-title slide: Pandoc metadata, after percentages-->
 <!--Title-->
 <!--Author(s) separated by semicolons or white space-->
 <!--Date (replaced here by affiliation for now)-->
-<!--"How to succeed in business without really trying" promotional poster goes in this slide-->
-<!-- Notes: 500px by 500px is too big for Beamer; so is 799px by 354px, but 150px by 200px works -->
-<!-- However, 150px by 200px is small for S5 and HTML-based slides -->
-<!--![Promotional poster for "How to succeed in business without really trying"](how-to-succeed-150x200.jpg)\ -->
+
+<!--Originally, 1st slide was attention getter; no attention getter -->
+<!--here due to restrictions on image use by LLNL-->
 
 <!--Task-->
 
@@ -35,10 +31,6 @@
     + Testing
     + Building paper
 - Services available for storing research outputs
-
-<!--Six million dollar man picture and reference-->
-
-<!--![Opening credits image of "The Six Million Dollar Man"](six-million-dollar-man-220x172.jpg)\ -->
 
 <!--Main message-->
 
@@ -52,7 +44,8 @@
     + Nondisclosure agreements
     + Software licensing issues
 - Partial reproducibility may still be possible despite restrictions  
-<!--Preview-->
+
+<!--Preview/Outline-->
 
 # How to succeed in reproducible research <br /> without really trying
 - State of reproducible research to-date
@@ -80,7 +73,7 @@
     + Structural and protein biology (1980s) [@Morin2012]
     + Political science (1990s) [@King1995]
     + Genomics and genetics (2000s)
-    [@Schofield2009; @Morin2012] <!--[@Birney2009-->
+    [@Schofield2009; @Morin2012] <!--[@Birney2009]-->
     + Statistics (2010s) [@Peng2009a]
 
 # Reproducible research =<br /> "post paper and all supporting materials"
@@ -237,8 +230,8 @@
 - Some journals and funding agencies require some form of reproducibility
     + PLoS, _Science_, others require sharing of code and data
     + NIH, NSF, DOE require sharing of data
-- Despite policies, researchers still don't share data or code <!--[@Savage2009]--> [@Ioannidis2009]<!--Provide examples here-->
-- Even if code and data provided, research still may not be reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] <!--Provide examples here-->
+- Despite policies, researchers still don't share data or code <!--[@Savage2009]--> [@Ioannidis2009]
+- Even if code and data provided, research still may not be reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] 
 - Policies are not enforced with penalties, probably why they are ineffective
 - Better policies must align community and personal incentives [@Morin2012]
  
@@ -283,11 +276,6 @@
 - Get more citations, save time later
 - Posting code much better than not
 
-<!--"How to succeed in business without really trying" promotional poster goes here-->
-<!-- Notes: 500px by 500px is too big; so is 799px by 354px, but 150px by 200px works -->
-
-<!--![Promotional poster for "How to succeed in business without really trying"](how-to-succeed-150x200.jpg)\ -->
-
 <!--Acknowledgments-->
 
 # Acknowledgments
@@ -296,6 +284,8 @@
 - Matt McNenly, Dan Flowers, Russell Whitesides, and LLNL colleagues (helpful discussions)
 - Lawrence Livermore National Laboratory (funding via postdoc account)
 - Gurpreet Singh (program manager)
+
+<!--Colophon-->
 
 # Colophon
 
