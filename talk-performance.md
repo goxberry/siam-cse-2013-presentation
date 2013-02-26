@@ -4,9 +4,9 @@
 
 # Computational science has culture problems
 - **Lack of verification**: Where's the bug?
-    + My method
-    + Its implementation
-    + Its dependencies
+    + My method?
+    + Its implementation?
+    + Its dependencies?
 - **Lack of transparency**
     + Unreproducible research = tough for others to debug
     + Distort results showing only "good" figures
@@ -74,15 +74,16 @@
     + Modern rigorous proof: 1800s
 - Notable experimental examples
     + Galileo (1620s) built several copies of his telescope
-    + Pasteur added "Materials and Methods" sections to his journal articles
+    + Pasteur added "Materials and Methods" sections to his journal
+    articles [@Buckheit1995]
 - Modern scientific movements
-    + Structural and protein biology (1980s)
-    + Political science (1990s)
-    + Genomics and genetics (2000s)
-    + Statistics (2010s)
+    + Structural and protein biology (1980s) [@Morin2012]
+    + Political science (1990s) [@King1995]
+    + Genomics and genetics (2000s) [@Birney2009; @Schofield2009; @Morin2012]
+    + Statistics (2010s) [@Peng2009a]
 
 # Reproducible research =<br /> "post paper and all supporting materials"
-- Reproducible research has many definitions
+- Reproducible research has many definitions [@Vandewalle2009a]
 - In this presentation, "reproducible research" means submitting _at minimum_:
     + the paper
     + all code and data to reproduce results
@@ -91,12 +92,12 @@
 - Can be helpful to do more
 
 # Most computational science <br /> **not** reproducible currently
-- People do not post the code with their work
+- People do not post the code with their work [@Merali2010a; @Barnes2010]
 - Even reproducible research gurus have published papers without code
-- They recount those experiences as cautionary tales
+- They recount those experiences as cautionary tales [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]
 
 # Lack of reproducibility causes problems
-- Anecdotes of Professor David Donoho are typical:
+- Typical anecdotes [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006; @Price1986; @Merali2010a]:
     + Which version of code goes with paper?
     + Where's the bug: method or implementation?
     + Easy to forget research set aside for months
@@ -105,8 +106,8 @@
 - Reproducible research helps avoid these issues
 
 # Doing reproducible research has benefits
-- Reproducible research tends to be cited more
-- In addition, reproducible research has the following anecdotal benefits:
+- Reproducible research tends to be cited more [@Vandewalle2009a, @Piwowar2007a]
+- In addition, reproducible research has the following anecdotal benefits [@Buckheit1995, @Vandewalle2009a, @LeVeque2009a, @LeVeque2006]:
     + Enhanced knowledge transfer 
     + Easier to resume projects after hiatus
     + Easier to train new researchers
@@ -147,7 +148,7 @@
     + Can track changes in any file type, and who made them
     + Can revert file to any point in its tracked history
 - **Costs**
-    + Need 2-3 days of use on your code, papers, presentations to get basics
+    + 2-3 days to learn; learn by using on everything
     + SVN, CVS require their own server (Git & Mercurial don't)
     + Takes a long time to master (much like LaTeX, MATLAB)
   
@@ -159,9 +160,7 @@
     + Publicity
 - **Costs**:
     + 1 hr to register, sync up files
-    + Limiting access costs money, unless:
-        - BitBucket + academic e-mail address
-        - GitHub + academic e-mail address + special permission
+    + Only free private space: academic e-mail address + BitBucket
     + Space is limited (usually 1 GB or so)
     + Large data sets or binaries: SourceForge or data archive
     + Limited by terms of service
@@ -172,6 +171,7 @@
     + Automates verification
     + Easier to write tests
     + Reduce software development time costs; get papers faster
+    <!--Add Greg Wilson citation here-->
 - **Costs**:
     + 1-2 days to work through examples
     + Each language has its own framework
@@ -219,8 +219,9 @@
 
 # Despite reducing costs, challenges remain
 - Tools make it easier to do reproducible research, but...
-- Reproducible research is uncommon, and resisted
+- Reproducible research is uncommon, and resisted [@Drummond2012]
 - Policies requiring reproducibility have not been effective
+  [@Savage2009; @Ioannidis2009]
 - Technical challenges still exist
 
 <!--Point 3: Challenges still exist-->
@@ -231,7 +232,7 @@
     + Cost-benefit tradeoff considered unfavorable
 - These views **shift costs from research _producers_ to research _consumers_**
     + Consumers re-implement, then check
-    + Computational science community reputation also suffers
+    + Computational science community reputation also suffers [@Quirk2005b]
     + Contradicts the tradition that burden of proof is on producers
 - Unreproducible research is a **false economy**
     + Producer savings: time spent making research reproducible
@@ -242,18 +243,20 @@
 - Some journals and funding agencies require some form of reproducibility
     + PLoS, _Science_, others require sharing of code and data
     + NIH, NSF, DOE require sharing of data
-- Despite these policies, researchers still don't share data or code <!--Provide examples here-->
-- Even if code and data are provided, research still may not be reproducible <!--Provide examples here-->
+- Despite these policies, researchers still don't share data or code [@Savage2009; @Ioannidis2009]<!--Provide examples here-->
+- Even if code and data are provided, research still may not be
+  reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] <!--Provide examples here-->
 - Policies are not enforced with penalties, probably why they are ineffective
-- Better policies must align community and personal incentives
+- Better policies must align community and personal incentives [@Morin2012]
  
 # Technical challenges also still exist
 - Reproducing big data and supercomputing research is hard
     + Scarcity of resources (big storage, big supercomputers)
-    + Best practice: cache intermediate data and results
+    + Best practice: cache intermediate data and results [@Freire2012]
 - Making sure that source code works on other people's computers is hard
     + Installing software is tedious and hard
-    + To run someone's source code, need their whole development environment
+    + To run someone's source code, need their whole development
+    environment [@LeVeque2006; @LeVeque2009a; @Buckheit1995; @Vandewalle2009a; @Stodden2009; @Freire2012]
     + Best practices: use virtual machines, provisioning software, reproducibility software
 - Keeping detailed enough records -- provenance -- is hard
     + Provenance software: VisTrails, Madagascar, Sumatra, etc.
