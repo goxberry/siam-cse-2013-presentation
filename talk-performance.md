@@ -119,17 +119,12 @@
 <!--Transition from Point 1 to Point 2-->
 
 # Reaping benefits of reproducible research <br /> reduces to habits and practices
-- Basic principles of reproducibility in computational science like those in experimental sciences
-- Keep good records
-    + Experimentalists and theoreticians use lab notebooks
-    + Computational scientists should use notebooks and version control
-- Include these records as supplemental material to papers
-    + Experimentalists: include data and analyses
-    + Theoreticians: include proofs and derivations
-    + Computational scientists: include code, data, proofs, derivations
-- Use tests to guard against error
-    + Experimentalists use positive and negative controls
-    + Computational scientists: test codes as much as possible
+- Basic principles of reproducibility in computational science like
+  those in experimental sciences
+- Like experimentalists, computational scientists need to:
+    + Keep good records: notebooks and version control!
+    + Include code, data, proofs, derivations
+    + Use tests as control experiments
     
 <!--Point 2: Tools and services to do reproducible research at reasonable cost-->
 
