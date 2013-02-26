@@ -8,7 +8,7 @@
     + Its implementation?
     + Its dependencies?
 - **Lack of transparency**
-    + Unreproducible research = tough for others to debug
+    + No public code = tough for others to debug
     + Distort results showing only "good" figures
 - **Efficiency**
     + Costly to implement everything from scratch
@@ -296,3 +296,8 @@
 - Matt McNenly, Dan Flowers, Russell Whitesides, and LLNL colleagues (helpful discussions)
 - Lawrence Livermore National Laboratory (funding via postdoc account)
 - Gurpreet Singh (program manager)
+
+# Colophon
+
+# References
+\tiny
