@@ -79,7 +79,8 @@
 - Modern scientific movements
     + Structural and protein biology (1980s) [@Morin2012]
     + Political science (1990s) [@King1995]
-    + Genomics and genetics (2000s) [@Birney2009; @Schofield2009; @Morin2012]
+    + Genomics and genetics (2000s)
+    [@Schofield2009; @Morin2012] <!--[@Birney2009-->
     + Statistics (2010s) [@Peng2009a]
 
 # Reproducible research =<br /> "post paper and all supporting materials"
@@ -92,7 +93,7 @@
 - Can be helpful to do more
 
 # Most computational science <br /> **not** reproducible currently
-- People do not post the code with their work [@Merali2010a; @Barnes2010]
+- People do not post the code with their work [@Merali2010a; @Barnes2010; @Morin2012]
 - Even reproducible research gurus have published papers without code
 - They recount those experiences as cautionary tales [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]
 
@@ -106,8 +107,8 @@
 - Reproducible research helps avoid these issues
 
 # Doing reproducible research has benefits
-- Reproducible research tends to be cited more [@Vandewalle2009a, @Piwowar2007a]
-- In addition, reproducible research has the following anecdotal benefits [@Buckheit1995, @Vandewalle2009a, @LeVeque2009a, @LeVeque2006]:
+- Reproducible research tends to be cited more [@Vandewalle2009a; @Piwowar2007a]
+- In addition, reproducible research has the following anecdotal benefits [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]:
     + Enhanced knowledge transfer 
     + Easier to resume projects after hiatus
     + Easier to train new researchers
@@ -221,7 +222,7 @@
 - Tools make it easier to do reproducible research, but...
 - Reproducible research is uncommon, and resisted [@Drummond2012]
 - Policies requiring reproducibility have not been effective
-  [@Savage2009; @Ioannidis2009]
+  <!--[@Savage2009]--> [@Ioannidis2009]
 - Technical challenges still exist
 
 <!--Point 3: Challenges still exist-->
@@ -243,20 +244,19 @@
 - Some journals and funding agencies require some form of reproducibility
     + PLoS, _Science_, others require sharing of code and data
     + NIH, NSF, DOE require sharing of data
-- Despite these policies, researchers still don't share data or code [@Savage2009; @Ioannidis2009]<!--Provide examples here-->
-- Even if code and data are provided, research still may not be
-  reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] <!--Provide examples here-->
+- Despite these policies, researchers still don't share data or code <!--[@Savage2009]--> [@Ioannidis2009]<!--Provide examples here-->
+- Even if code and data are provided, research still may not be reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] <!--Provide examples here-->
 - Policies are not enforced with penalties, probably why they are ineffective
 - Better policies must align community and personal incentives [@Morin2012]
  
 # Technical challenges also still exist
 - Reproducing big data and supercomputing research is hard
     + Scarcity of resources (big storage, big supercomputers)
-    + Best practice: cache intermediate data and results [@Freire2012]
+    + Best practice: cache intermediate data and results [@Freire2012a]
 - Making sure that source code works on other people's computers is hard
     + Installing software is tedious and hard
     + To run someone's source code, need their whole development
-    environment [@LeVeque2006; @LeVeque2009a; @Buckheit1995; @Vandewalle2009a; @Stodden2009; @Freire2012]
+    environment [@LeVeque2006; @LeVeque2009a; @Buckheit1995; @Vandewalle2009a; @Stodden2009; @Freire2012a]
     + Best practices: use virtual machines, provisioning software, reproducibility software
 - Keeping detailed enough records -- provenance -- is hard
     + Provenance software: VisTrails, Madagascar, Sumatra, etc.
