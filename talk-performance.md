@@ -103,7 +103,7 @@
     + Where's the bug: method or implementation?
     + Easy to forget research set aside for months
     + Results can depend on "magic parameter settings"
-    + New person in lab can't repeat what former grad student's work
+    + New person in lab can't repeat former grad student's work
 - Reproducible research helps avoid these issues
 
 # Doing reproducible research has benefits
@@ -154,11 +154,11 @@
     + Eases collaboration
     + Free backup of project files
     + Publicity
+    + Academics: free private space on BitBucket
 - **Costs**:
     + 1 hr to register, sync up files
-    + Only free private space: academic e-mail address + BitBucket
+    + Private space usually costs money
     + Space is limited (usually 1 GB or so)
-    + Large data sets or binaries: SourceForge or data archive
     + Limited by terms of service
   
 # Unit testing frameworks <br /> ease debugging, verification
@@ -176,7 +176,7 @@
 # Build systems automate <br /> running tests, generating results
 - **Examples**: GNU make, SCons, CMake, GNU autotools, etc.
 - **Payoffs**:
-    + Build source code, test, run, all in one command
+    + Build code, test, run, all in one command
     + Build presentations, papers from LaTeX (or other) source
     + Avoid mistake-prone long chains of commands
 - **Costs**:
@@ -205,20 +205,18 @@
     + **Transparency**: increased citation count, broader impact
     + **Efficiency**: de-duplication of effort
 - These benefits map to tools as follows:
-    + **Verification**: download hosted source code, build it, run tests
+    + **Verification**: download hosted code, build it, run tests
     + **Transparency**: hosting sites store research record, tracked
     with FigShare & ORCID
-    + **Efficiency**:
-        - Version control enables collaborating, experimenting, reverting changes
-        - Testing frameworks reduce time spent debugging
-        - Can reuse reproducible research
+    + **Efficiency**: releasing code promotes reuse, testing speeds
+    debugging, versioning helps collaboration
 
 # Despite reducing costs, challenges remain
 - Tools make it easier to do reproducible research, but...
 - Reproducible research is uncommon, and resisted [@Drummond2012]
-- Policies requiring reproducibility have not been effective
-  <!--[@Savage2009]--> [@Ioannidis2009]
-- Technical challenges still exist
+- Policies requiring reproducibility have not been effective [@Ioannidis2009]
+  <!--[@Savage2009]-->
+- Technical challenges still exist (big data, supercomputing)
 
 <!--Point 3: Challenges still exist-->
 
@@ -226,7 +224,7 @@
 - Most computational science research is not done reproducibly
     + Viewed as costing too much
     + Cost-benefit tradeoff considered unfavorable
-- These views **shift costs from research _producers_ to research _consumers_**
+- It **shifts costs from research _producers_ to research _consumers_**
     + Consumers re-implement, then check
     + Computational science community reputation also suffers [@Quirk2005b]
     + Contradicts the tradition that burden of proof is on producers
@@ -239,8 +237,8 @@
 - Some journals and funding agencies require some form of reproducibility
     + PLoS, _Science_, others require sharing of code and data
     + NIH, NSF, DOE require sharing of data
-- Despite these policies, researchers still don't share data or code <!--[@Savage2009]--> [@Ioannidis2009]<!--Provide examples here-->
-- Even if code and data are provided, research still may not be reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] <!--Provide examples here-->
+- Despite policies, researchers still don't share data or code <!--[@Savage2009]--> [@Ioannidis2009]<!--Provide examples here-->
+- Even if code and data provided, research still may not be reproducible [@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] <!--Provide examples here-->
 - Policies are not enforced with penalties, probably why they are ineffective
 - Better policies must align community and personal incentives [@Morin2012]
  
@@ -250,7 +248,7 @@
     + Best practice: cache intermediate data and results [@Freire2012a]
 - Making sure that source code works on other people's computers is hard
     + Installing software is tedious and hard
-    + To run someone's source code, need their whole development
+    + To run someone's code, need their whole development
     environment [@LeVeque2006; @LeVeque2009a; @Buckheit1995; @Vandewalle2009a; @Stodden2009; @Freire2012a]
     + Best practices: use virtual machines, provisioning software, reproducibility software
 - Keeping detailed enough records -- provenance -- is hard
@@ -283,6 +281,7 @@
 - Learning tools requires small investments to automate record-keeping
 - Good record-keeping protects investments in scholarship
 - Get more citations, save time later
+- Posting code much better than not
 
 <!--"How to succeed in business without really trying" promotional poster goes here-->
 <!-- Notes: 500px by 500px is too big; so is 799px by 354px, but 150px by 200px works -->
