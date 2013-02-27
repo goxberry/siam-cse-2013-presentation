@@ -296,5 +296,5 @@
 <!--References/Bibliography-->
 
 # References
-\fontsize{6pt}{1pt}\selectfont
+\tiny
 
