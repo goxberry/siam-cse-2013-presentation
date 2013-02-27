@@ -68,7 +68,7 @@
 - Notable experimental examples
     + Galileo (1620s) built several copies of his telescope
     + Pasteur added "Materials and Methods" sections to his journal
-    articles [@Buckheit1995]
+    articles[@Buckheit1995]
 - Modern scientific movements
     + Structural and protein biology (1980s)[@Morin2012]
     + Political science (1990s)[@King1995]
@@ -76,7 +76,7 @@
     + Statistics (2010s)[@Peng2009a]
 
 # Reproducible research =<br /> "post paper and all supporting materials"
-- Reproducible research has many definitions [@Vandewalle2009a]
+- Reproducible research has many definitions[@Vandewalle2009a]
 - In this presentation, "reproducible research" means submitting _at minimum_:
     + the paper
     + all code and data to reproduce results
@@ -85,12 +85,12 @@
 - Can be helpful to do more
 
 # Most computational science <br /> **not** reproducible currently
-- People do not post the code with their work [@Merali2010a; @Barnes2010; @Morin2012]
+- People do not post the code with their work[@Merali2010a; @Barnes2010; @Morin2012]
 - Even reproducible research gurus have published papers without code
-- They recount those experiences as cautionary tales [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]
+- They recount those experiences as cautionary tales[@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]
 
 # Lack of reproducibility causes problems
-- Typical anecdotes [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006; @Price1986; @Merali2010a]:
+- Typical anecdotes[@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006; @Price1986; @Merali2010a]:
     + Which version of code goes with paper?
     + Where's the bug: method or implementation?
     + Easy to forget research set aside for months
@@ -99,8 +99,8 @@
 - Reproducible research helps avoid these issues
 
 # Doing reproducible research has benefits
-- Reproducible research tends to be cited more [@Vandewalle2009a; @Piwowar2007a]
-- In addition, reproducible research has the following anecdotal benefits [@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]:
+- Reproducible research tends to be cited more[@Vandewalle2009a; @Piwowar2007a]
+- In addition, reproducible research has the following anecdotal benefits[@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]:
     + Enhanced knowledge transfer 
     + Easier to resume projects after hiatus
     + Easier to train new researchers
@@ -236,7 +236,7 @@
 # Technical challenges also still exist
 - Reproducing big data and supercomputing research is hard
     + Scarcity of resources (big storage, big supercomputers)
-    + Best practice: cache intermediate data and results [@Freire2012a]
+    + Best practice: cache intermediate data and results[@Freire2012a]
 - Making sure that source code works on other people's computers is hard
     + Installing software is tedious and hard
     + To run someone's code, need their whole development
