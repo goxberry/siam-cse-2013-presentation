@@ -65,12 +65,13 @@
       <!--(goxberry@gmail.com): Changed sorting criteria; snippet from aiaa-journal CSL style file-->
       <key variable="citation-number"/>
     </sort>
+    <!-- (goxberry@gmail.com): Removed superfluous dates and months. -->
     <layout suffix=".">
       <text variable="citation-number" prefix="[" suffix="]"/>
       <text macro="author" suffix=" "/>
-      <date variable="issued" suffix=". ">
-        <date-part name="year"/>
-      </date>
+      <!--<date variable="issued" suffix=". ">-->
+      <!--  <date-part name="year"/> -->
+      <!--</date> -->
       <choose>
         <if type="paper-conference">
           <group delimiter=". ">
@@ -81,7 +82,7 @@
                 <group delimiter=", " prefix="(" suffix=")">
                   <text variable="publisher-place"/>
                   <date variable="issued">
-                    <date-part name="month" form="short" suffix=". " strip-periods="true"/>
+                    <!--<date-part name="month" form="short" suffix=". " strip-periods="true"/> -->
                     <date-part name="year"/>
                   </date>
                 </group>
@@ -99,7 +100,7 @@
               <group delimiter=" ">
                 <text variable="issue"/>
                 <date variable="issued" prefix="(" suffix=")">
-                  <date-part name="month" form="short" suffix=". " strip-periods="true"/>
+                  <!-- <date-part name="month" form="short" suffix=". " strip-periods="true"/> -->
                   <date-part name="year"/>
                 </date>
               </group>
@@ -112,7 +113,7 @@
             <text variable="title"/>
             <text variable="number" prefix="U.S. Patent #"/>
             <date variable="issued">
-              <date-part name="month" form="short" suffix=". " strip-periods="true"/>
+              <!-- <date-part name="month" form="short" suffix=". " strip-periods="true"/> -->
               <date-part name="day" suffix=", "/>
               <date-part name="year"/>
             </date>
@@ -123,6 +124,10 @@
             <text variable="title" font-style="italic"/>
             <text variable="archive_location" prefix="Doctoral Thesis #"/>
             <text variable="publisher"/>
+            <!--(goxberry@gmail.com): Added to make format consistent-->
+            <date variable="issued" prefix="(" suffix=")">
+              <date-part name="year"/>
+            </date>
           </group>
         </else-if>
         <else-if type="report">
