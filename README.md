@@ -5,7 +5,13 @@ This repository contains files needed to generate a presentation for the SIAM CS
 ## Dependencies
 
 - Pandoc
+- LaTeX (for Beamer-formatted talk)
 - Beamer (for Beamer-formatted talk)
+- LaTeX packages (for Beamer-formatted version given at SIAM CSE 2013):
+    + relsize
+    + textpos
+    + eso-pic
+    + hyperref
 
 ## Instructions
 
@@ -16,6 +22,23 @@ Use the command:
     pandoc -t html README.md -o README.html
     
 I use Pandoc to convert Markdown to HTML, but for this README, any Markdown to HTML converter should suffice.
+
+### Generating the slide show given at SIAM CSE 2013
+
+Run the command:
+
+    pandoc --bibliography=talk-bibliography.bib
+    --template=beamer-talk-template.tex --csl=talk-custom.csl -t
+    beamer talk-performance.md -o talk-performance.pdf
+    
+The presentation will be in the file `talk-performance.pdf`. The
+dependent files are:
+
+    - `talk-bibliography.bib`: References in BibTeX format
+    - `beamer-talk-template.tex`: Formatting template for Beamer
+    - `talk-custom.csl`: Citation Style Language XML file to specify
+      format of references
+    - `talk-performance.md`: Markdown-formatted content for talk
 
 ### Generating slide shows:
 
