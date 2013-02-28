@@ -8,7 +8,7 @@
     + Its implementation?
     + Its dependencies?
 - **Lack of transparency**
-    + No public code = tough for others to debug
+    + No public code & data = tough for others to debug
     + Do results only show "good" case studies?
 - **Efficiency**
     + Costly to implement everything from scratch
@@ -52,7 +52,7 @@
     + Defining "reproducible research"
     + Motivating reproducible research
 - Tools and services to do reproducible research at reasonable cost
-    + How and where to host code
+    + How and where to host code & data
     + Automate verification
     + Where to host everything else, and getting credit for it
 - Challenges still exist
@@ -79,14 +79,15 @@
 - Reproducible research has many definitions[@Vandewalle2009a]
 - In this presentation, "reproducible research" means submitting _at minimum_:
     + the paper
-    + all code and data to reproduce results
-    + README files describing code, data
+    + all code & data to reproduce results
+    + README files describing code & data
 - Minimum standard chosen to minimize cost
 - Can be helpful to do more
 
 # Most computational science <br /> **not** reproducible currently
-- People do not post the code with their work[@Merali2010a; @Barnes2010; @Morin2012]
+- People do not post the code & data with their work[@Merali2010a; @Barnes2010; @Morin2012]
 - Even reproducible research gurus have published papers without code
+  & data
 - They recount those experiences as cautionary tales[@Buckheit1995; @Vandewalle2009a; @LeVeque2009a; @LeVeque2006]
 
 # Lack of reproducibility causes problems
@@ -130,23 +131,23 @@
 - Examples, payoffs, and estimated costs (to learn basics) given
 
 # Version control systems <br /> track all code changes in repositories
-- **Examples**: Git, Mercurial, SVN, CVS, etc.
+- **Examples**: [Git](http://git-scm.com/), [Mercurial](http://mercurial.selenic.com/), [SVN](http://subversion.apache.org/), [CVS](http://cvs.nongnu.org/), etc.
 - **Payoffs**
     + Eases collaboration
     + Can track changes in any file type, and who made them
     + Can revert file to any point in its tracked history
 - **Costs**
-    + 2-3 days to learn; learn by using on everything
+    + [2-3 days to learn](http://fperez.org/tmp/Version%20Control.html); learn by using on _everything you can_
     + SVN, CVS require their own server (Git & Mercurial don't)
     + Takes a long time to master (much like LaTeX, MATLAB)
   
 # Repository hosting sites available
-- **Examples**: GitHub, BitBucket, Google Code, SourceForge, etc.
+- **Examples**: [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/), [Google Code](https://code.google.com/), [SourceForge](http://sourceforge.net/), etc.
 - **Payoffs**:
     + Eases collaboration
     + Free backup of project files
     + Publicity
-    + Academics: free private space on BitBucket
+    + [Academics: free private space on BitBucket](https://bitbucket.org/plans)
 - **Costs**:
     + 1 hr to register, sync up files
     + Private space usually costs money
@@ -154,7 +155,7 @@
     + Limited by terms of service
   
 # Unit testing frameworks <br /> ease debugging, verification
-- **Examples**: MATLAB xUnit, Python Nose, GoogleTest, etc.
+- **Examples**: [MATLAB xUnit](http://blogs.mathworks.com/steve/2010/06/27/matlab-xunit-301/), [Python Nose](http://nose.readthedocs.org/en/latest/), [GoogleTest](http://code.google.com/p/googletest/), etc.
 - **Payoffs**:
     + Automates verification
     + Easier to write tests
@@ -162,10 +163,10 @@
 - **Costs**:
     + 1-2 days to work through examples
     + Each language has its own framework
-    + Most frameworks use xUnit standard
+    + Most frameworks use [xUnit standard](https://en.wikipedia.org/wiki/XUnit)
 
 # Build systems automate <br /> running tests, generating results
-- **Examples**: GNU make, SCons, CMake, GNU autotools, etc.
+- **Examples**: [GNU make](http://www.gnu.org/software/make/), [SCons](http://www.scons.org/), [CMake](http://www.cmake.org/), [GNU autotools](http://www.gnu.org/software/autoconf/), etc.
 - **Payoffs**:
     + Build code, test, run, all in one command
     + Build presentations, papers from LaTeX (or other) source
@@ -177,15 +178,15 @@
 
 # Services host and track pre-prints, data, etc.
 - **Examples**:
-    + _Pre-prints_: arXiv, Optimization Online, FigShare, etc.
-    + _Data, Figures, Presentations_: FigShare, DataDryad, ORCID, etc.
+    + _Pre-prints_: [arXiv](http://arxiv.org/), [Optimization Online](http://www.optimization-online.org/), [FigShare](http://figshare.com/), etc.
+    + _Data, Figures, Presentations_: FigShare, [DataDryad](http://datadryad.org/), [ORCID](http://orcid.org/), etc.
 - **Payoffs**:
     + Free space for hosting
     + Assignment of DOIs
     + Tracking citation metrics (mainly FigShare)
 - **Costs**:
     + Registration: 1 hour
-    + License restrictions placed on posted material
+    + Sometimes, [license restrictions placed on posted material](http://figshare.com/cc_license)
     + Limited or no private storage space
 
 <!--Transition from Point 2 to Point 3-->
@@ -226,8 +227,8 @@
         
 # Policies requiring reproducibility <br /> have not been effective
 - Some journals and funding agencies require some form of reproducibility
-    + PLoS, _Science_, others require sharing of code and data
-    + NIH, NSF, DOE require sharing of data
+    + [PLoS](http://www.plosone.org/static/policies.action), [_Science_](http://www.sciencemag.org/site/feature/contribinfo/prep/gen_info.xhtml#dataavail), others require sharing of code and data
+    + [NIH](http://grants.nih.gov/grants/policy/data_sharing/), [NSF](http://www.nsf.gov/bfa/dias/policy/dmp.jsp), [DOE](http://genomicscience.energy.gov/datasharing/index.shtml) require sharing of data
 - Despite policies, researchers still don't share data or code[@Savage2009; @Ioannidis2009]
 - ...because policies aren't enforced
 - Even if code and data provided, research still may not be reproducible[@McCullough2007; @McCullough2008; @Ioannidis2009; @Manolescu2009] 
@@ -243,8 +244,8 @@
     environment[@LeVeque2006; @LeVeque2009a; @Buckheit1995; @Vandewalle2009a; @Stodden2009; @Freire2012a]
     + Best practices: use virtual machines, provisioning software, reproducibility software
 - Keeping detailed enough records -- provenance -- is hard
-    + Provenance software: VisTrails, Madagascar, Sumatra, etc.
-    + Electronic notebooks like Carl Boettiger's tackle day-to-day record-keeping
+    + Provenance software: [VisTrails](http://www.vistrails.org/), [Madagascar](http://www.ahay.org/wiki/Main_Page), [Sumatra](http://software.incf.org/software/sumatra), etc.
+    + Electronic notebooks like [Carl Boettiger's](http://carlboettiger.info/) tackle day-to-day record-keeping
 
 <!--Review-->
 <!--Summarize definition of reproducibility-->
@@ -277,7 +278,9 @@
 <!--Acknowledgments-->
 
 # Acknowledgments
-- Victoria Stodden (posted a literature review)
+- Victoria Stodden (posted a
+  [literature review](http://wiki.stodden.net/ICERM_Reproducibility_in_Computational_and_Experimental_Mathematics:_Readings_and_References))
+- ICERM (hosted [reproducibility workshop](http://icerm.brown.edu/tw12-5-rcem))
 - Jaydeep Bardhan, Ahmed E. Ismail, and friends (helpful discussions)
 - Matt McNenly, Dan Flowers, Russell Whitesides, and LLNL colleagues (helpful discussions)
 - Lawrence Livermore National Laboratory (funding via postdoc account)
@@ -286,12 +289,12 @@
 <!--Colophon-->
 
 # Colophon
-- Presentation written in Markdown
-- Compiled into LaTeX/Beamer using Pandoc
+- Presentation written in [Markdown](http://daringfireball.net/projects/markdown/)
+- Compiled into [LaTeX](http://www.latex-project.org/)/[Beamer](http://bitbucket.org/rivanvx/beamer) using Pandoc
 - Custom LaTeX/Beamer template
 - Bibliography:
-    + Content: BibTeX generated by Mendeley (manually curated)
-    + Style: custom CSL hacked from existing styles (attribution in comments)
+    + Content: [BibTeX](http://www.bibtex.org/) generated by [Mendeley](http://www.mendeley.com/) (manually curated)
+    + Style: custom [CSL](http://citationstyles.org/) hacked from existing styles (attribution in comments)
 
 <!--References/Bibliography-->
 
